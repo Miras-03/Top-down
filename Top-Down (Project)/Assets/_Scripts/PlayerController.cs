@@ -1,18 +1,21 @@
 using System;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public sealed class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Transform bullet;
     private Action OnMove;
 
-    private const int moveSpeed = 35;
+    private const int moveSpeed = 40;
 
     private void Start() => OnMove += Move;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (GetHorizontalInput() != 0)
             OnMove.Invoke();
+        if (IsShooting())
+            Instantiate(bullet, transform.localPosition, transform.localRotation);
     }
 
     private void Move()
@@ -21,7 +24,7 @@ public class PlayerController : MonoBehaviour
         float currentPos = transform.position.x;
 
         if (p < 20)
-            transform.Translate(GetHorizontalInput() * moveSpeed * Time.fixedDeltaTime, 0, 0);
+            transform.Translate(GetHorizontalInput() * Time.deltaTime * moveSpeed, 0, 0);
         else
         {
             float currentZPos = transform.position.z;
@@ -35,4 +38,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private float GetHorizontalInput() => Input.GetAxis("Horizontal");
+
+    private bool IsShooting() => Input.GetKeyDown(KeyCode.Space);
 }
