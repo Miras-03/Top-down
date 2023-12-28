@@ -6,17 +6,10 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private Transform[] animals;
 
     private const int xRange = 15;
+    private const int startDelay = 1;
+    private const int endDelay = 2;
 
-    private void Start() => StartCoroutine(SpawnWithDelay());
-
-    private IEnumerator SpawnWithDelay()
-    {
-        while (true)
-        {
-            GenerateAndInstantiate();
-            yield return new WaitForSeconds(3);
-        }
-    }
+    private void Start() => InvokeRepeating(nameof(GenerateAndInstantiate), startDelay, endDelay);
 
     private void GenerateAndInstantiate()
     {
