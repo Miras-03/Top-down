@@ -436,9 +436,9 @@ GameObject:
   - component: {fileID: 9147833922710884605}
   - component: {fileID: 1125872428052031148}
   - component: {fileID: 8894899106206209207}
-  - component: {fileID: -5315359045494603866}
-  - component: {fileID: 7324707030054304630}
   - component: {fileID: 311526258523408029}
+  - component: {fileID: 6914842966650113904}
+  - component: {fileID: 7324707030054304630}
   - component: {fileID: 7228406417486429544}
   m_Layer: 0
   m_Name: Animal_Fox
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
---- !u!114 &-5315359045494603866
+--- !u!114 &311526258523408029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -517,10 +517,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3448754072414159591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf911f67c06df3947bafeb341bad2438, type: 3}
+  m_Script: {fileID: 11500000, guid: 87a27f437a547754191fe204591e44f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundDistance: 25
+--- !u!114 &6914842966650113904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448754072414159591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4261bd3f3ec1fc54c8b446fdab82943a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &7324707030054304630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -542,18 +553,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 0.2, z: 0.3}
   m_Center: {x: 0, y: 0.1, z: 0}
---- !u!114 &311526258523408029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3448754072414159591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a27f437a547754191fe204591e44f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &7228406417486429544
 Rigidbody:
   m_ObjectHideFlags: 0

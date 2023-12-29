@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1406023184981048548}
   - component: {fileID: 6152538863557479537}
   - component: {fileID: -8671023584740750335}
+  - component: {fileID: -3343142689875331597}
   - component: {fileID: 530455093016588472}
   m_Layer: 0
   m_Name: CookieBullet
@@ -112,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf911f67c06df3947bafeb341bad2438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundDistance: 25
 --- !u!114 &-8671023584740750335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87a27f437a547754191fe204591e44f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3343142689875331597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494605032374741242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da88d1efc242b204c842119a9b0ff76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &530455093016588472

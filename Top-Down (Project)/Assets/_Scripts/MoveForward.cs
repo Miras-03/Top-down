@@ -1,4 +1,3 @@
-using System.Threading;
 using UnityEngine;
 
 public sealed class MoveForward : MonoBehaviour
