@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376077796}
   - component: {fileID: 376077795}
+  - component: {fileID: 376077797}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -251,10 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ce07caee97dcf468341b660809b1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animals:
-  - {fileID: 9147833922710884605, guid: 21b021bba5f90b848a04e1e52e322894, type: 3}
-  - {fileID: 1133286990197712746, guid: f1ae499bfec2d7a44a13939cff11ce66, type: 3}
-  - {fileID: 7087625153998501031, guid: f3ee35021b54d1648b7665669b731c29, type: 3}
 --- !u!4 &376077796
 Transform:
   m_ObjectHideFlags: 0
@@ -270,6 +267,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376077797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376077794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b8be88a8d4fcc4c844cfe187be6da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - prefab: {fileID: 9147833922710884605, guid: 21b021bba5f90b848a04e1e52e322894, type: 3}
+    tag: Fox
+    quantity: 10
+  - prefab: {fileID: 1133286990197712746, guid: f1ae499bfec2d7a44a13939cff11ce66, type: 3}
+    tag: Horse
+    quantity: 10
+  - prefab: {fileID: 7087625153998501031, guid: f3ee35021b54d1648b7665669b731c29, type: 3}
+    tag: Moose
+    quantity: 10
 --- !u!1 &475985833
 GameObject:
   m_ObjectHideFlags: 0
